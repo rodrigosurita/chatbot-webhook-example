@@ -1,0 +1,80 @@
+<%- contentFor('body') %>
+
+<style>
+  /* label focus color */
+  .input-field input:focus+label {
+    color: #1a237e !important;
+  }
+
+  /* label underline focus color */
+  .input-field input:focus {
+    border-bottom: 1px solid #1a237e !important;
+    box-shadow: 0 1px 0 0 #1a237e !important;
+  }
+
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #1a237e !important;
+  }
+</style>
+
+<div class="container">
+  <form class="col s12 m12" method="POST" action="/register/submit">
+
+    <div class="row">
+
+      <div class="input-field col s12 m12">
+        <h4>Cadastro</h4>
+      </div>
+
+      <div class="input-field col s12 m12">
+
+        <input autocomplete="off" id="username" type="text">
+        <label for="username">Nome Completo</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12 m6">
+
+        <input autocomplete="off" id="useremail" type="email" class="validate">
+        <label for="useremail">E-mail</label>
+      </div>
+      <div class="input-field col s12 m6">
+
+        <input autocomplete="off" id="userconfirmemail" type="email" class="validate">
+        <label for="userconfirmemail">Confirme o e-mail</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12 m6">
+
+        <input autocomplete="off" id="userpassword" type="password" minlength=8 maxlength=20 class="validate">
+        <label for="userpassword">Senha (8 caracteres)</label>
+      </div>
+      <div class="input-field col s12 m6">
+
+        <input autocomplete="off" id="userconfirmpassword" type="password" minlength=8 maxlength=20 class="validate">
+        <label for="userconfirmpassword">Confirme a senha</label>
+      </div>
+      <div class="col s12 m12">
+        <label>
+          <input id="admin" type="checkbox" class="filled-in" />
+          <span>Administrador</span>
+        </label>
+        <a id="btnregister" class="col s12 m3 red darken-4 waves-effect waves-light btn right hoverable">cadastrar</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+  var env = {}
+  env.HOST = "<%- process.env.HOST %>";
+  /*Pannel menu active*/
+  let menuList = document.getElementsByClassName("menu-users");
+  for (item of menuList) {
+    item.classList.add("active");
+  };
+</script>
+<script src="<%-process.env.HOST%>/js/libs/jquery-3.3.1.min.js"></script>
+<script src="<%-process.env.HOST%>/js/register.client.js"></script>

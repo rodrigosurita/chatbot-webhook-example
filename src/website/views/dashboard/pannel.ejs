@@ -1,0 +1,114 @@
+<%- contentFor('body') %>
+<style>
+  .load-bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 400;
+    background: black;
+    opacity: .4;
+  }
+
+  .load-spinner {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 100px);
+    z-index: 410;
+  }
+</style>
+
+<div id="loading" style="display:none;">
+  <div class="load-bg"></div>
+  <div class="load-spinner">
+    <svg width="200px" height="200px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+      preserveAspectRatio="xMidYMid" class="lds-infinity" style="background: none;">
+      <path fill="none" ng-attr-stroke="{{config.stroke}}" ng-attr-stroke-width="{{config.width}}"
+        ng-attr-stroke-dasharray="{{config.dasharray}}"
+        d="M24.3,30C11.4,30,5,43.3,5,50s6.4,20,19.3,20c19.3,0,32.1-40,51.4-40 C88.6,30,95,43.3,95,50s-6.4,20-19.3,20C56.4,70,43.6,30,24.3,30z"
+        stroke="#ffffff" stroke-width="5" stroke-dasharray="192.4416961669922 64.14723205566406">
+        <animate attributeName="stroke-dashoffset" calcMode="linear" values="0;256.58892822265625" keyTimes="0;1"
+          dur="1" begin="0s" repeatCount="indefinite"></animate>
+      </path>
+    </svg>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col m4 s12">
+    <h4>Perfil</h4>
+    <hr>
+    <p><b>Nome</b>: <%- info.name %></p>
+    <p><b>E-mail</b>: <%- info.email %></p>
+    <h5><%- info.message %></h5>
+  </div>
+  <div class="col m8 s12">
+    <h4>Pedidos</h4>
+    <hr>
+    
+
+    <% if(info.orders.length > 0 ){ %>
+
+      <% for(pedido in info.orders){ %>
+
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="https://www.groveresortorlando.com/i/SITE_160328_14361880_QT51P/content/CMS_160406_13473791_01CZN/63202464-0254-23B2-FFEF1BCC4E5CC8EE.JPG">
+            <span class="card-title">Pedido</span>
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p><b>Cliente</b>: <%- info.orders[pedido].cliente  %></p>
+              <p><b>Previsão de entrega</b>: 50 minutos</p>
+            </div>
+            <div class="card-action">
+              <a style="cursor:pointer" onclick="openOrderDetail({produto: '<%- info.orders[pedido].produto  %>', sabor: '<%- info.orders[pedido].sabor  %>',tamanho: '<%- info.orders[pedido].tamanho  %>',refrigerante: <%- info.orders[pedido].refrigerante  %> })">Detalhes</a>
+            </div>
+          </div>
+        </div>
+
+      <% } %>
+
+    <% } else { %>
+
+      <h5>Sem pedidos</h5>
+
+    <% } %>
+
+
+  </div>
+</div>
+
+<!--DETALHES DO PEDIDO-->
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Detalhes do Pedido</h4>
+      <ul id="product-details" class="collection">
+        
+      </ul>
+    </div>
+  </div>
+
+
+<script>
+  /*Pannel menu active*/
+  let menuList = document.getElementsByClassName("menu-pannel");
+  for (item of menuList) {
+    item.classList.add("active");
+  };
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, {});
+  });
+  //MODAL
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, {});
+  });
+</script>
+<script src="<%-process.env.HOST%>/js/libs/jquery-3.3.1.min.js"></script>
+<script src="<%-process.env.HOST%>/js/dashboard.client.js"></script>

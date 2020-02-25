@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="<%-process.env.HOST%>/img/favicon-login.png" type="image/gif" sizes="16x16">
+  <title>Pizzaria - Painel</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="<%-process.env.HOST%>/css/libs/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="<%-process.env.HOST%>/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+</head>
+<body>
+
+  <style>
+    .tab span{
+      margin-left: 5px;
+    }
+    nav .brand-logo{
+      margin-left: 15px;
+    }
+
+  </style>
+
+  <nav class="nav-extended">
+    <div class="nav-wrapper red darken-4">
+      <a href="#" class="brand-logo white-text" style="height: 100%;">
+        <h5>Pizzaria</h5>
+      </a>
+        <ul class="right hide-on-med-and-down">
+          <li class="menu-pannel"><a class="white-text" href="<%-process.env.HOST%>/dashboard/pannel">Painel</a></li>
+          <li class="menu-users"><a class="white-text" href="<%-process.env.HOST%>/dashboard/register" >Usuários</a></li>
+          <li class="btnLogout"><a class="white-text" href="javascript:void(0)">Sair</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li class="menu-pannel"><a href="<%-process.env.HOST%>/dashboard/pannel" >Painel</a></li>
+          <li class="menu-users"><a href="<%-process.env.HOST%>/dashboard/register" >Usuários</a></li>
+          <li class="btnLogout"><a href="javascript:void(0)" >Sair</a></li>
+        </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="fas fa-bars white-text"></i></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <%- body %>
+  </div>
+  <!--  Scripts-->
+  
+  <!-- <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script> -->
+  
+  <script>
+    var env = {}
+    env.HOST = "<%- process.env.HOST %>";
+  </script>
+  <script src="<%-process.env.HOST%>/js/libs/materialize.min.js"></script>
+  <script src="<%-process.env.HOST%>/js/libs/sweetalert.min.js"></script>
+  
+  <script>
+    $('.sidenav').sidenav();
+    $('ul.tabs').tabs();
+  </script>
+</body>
+</html>
