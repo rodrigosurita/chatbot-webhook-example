@@ -148,7 +148,7 @@
               <button id="btnlogin" class="col s12 m6 offset-m3 waves-effect waves-light btn-large red darken-4">
                 Entrar
               </button>
-              <a class="col s12 white-text modal-trigger" style="margin-top: 20px" href="#modal1">Cadastre-se</a>
+              <a class="col s12 white-text modal-trigger" style="margin-top: 20px" href="#registermodal">Cadastre-se</a>
             </div>
           </div>
         </div>
@@ -157,7 +157,7 @@
   </div>
 
   <!-- REGISTER MODAL -->
-  <div id="modal1" class="modal">
+  <div id="registermodal" class="modal">
     <div class="modal-content grey darken-4">
       <div class="container">
         <form class="col s12 m12" method="POST" action="/register/submit">
@@ -195,7 +195,7 @@
             </div>
             <div class="col s12 m12">
               <label>
-                <input id="admin" type="checkbox" class="filled-in" checked />
+                <input id="admin" type="checkbox" class="filled-in" checked disabled/>
                 <span>Administrador</span>
               </label>
               <a id="btnregister" class="col s12 m3 red darken-4 waves-effect waves-light btn right hoverable">cadastrar</a>
