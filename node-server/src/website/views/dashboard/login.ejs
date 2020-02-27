@@ -1,185 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" href="<%-process.env.HOST%>/img/favicon-login.png" type="image/gif" sizes="16x16" />
-    <title>Pizzaria - Login</title>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link
-      href="<%-process.env.HOST%>/css/libs/materialize.css"
-      type="text/css"
-      rel="stylesheet"
-      media="screen,projection"
-    />
-    <link href="<%-process.env.HOST%>/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  </head>
+  <link rel="icon" href="<%-process.env.HOST%>/img/favicon-login.png" type="image/gif" sizes="16x16" />
+  <title>Pizzaria - Login</title>
 
-  <body>
-    <style>
-      .green.darken-2 {
-        background-color: #052628 !important;
-      }
-      body,
-      html {
-        height: 100%;
-        margin: 0;
-      }
-      .login {
-        padding-top: 100px;
-      }
-      .login .card {
-        background: rgba(0, 0, 0, 0.6);
-      }
-      .login label {
-        font-size: 16px;
-        color: #ccc;
-      }
-      .login input {
-        font-size: 22px !important;
-        color: #fff;
-      }
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="<%-process.env.HOST%>/css/libs/materialize.css" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+  <link href="<%-process.env.HOST%>/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
 
-      /* label color */
-      .input-field label {
-        color: #fff !important;
-      }
-      /* label focus color */
-      .input-field input:focus + label {
-        color: #fff !important;
-      }
-      /* label underline focus color */
-      .input-field input:focus {
-        border-bottom: 1px solid #fff !important;
-        box-shadow: 0 1px 0 0 #fff !important;
-      }
-      /* icon prefix focus color */
-      .input-field .prefix.active {
-        color: #fff !important;
-      }
+<body>
+  <style>
+    .green.darken-2 {
+      background-color: #052628 !important;
+    }
 
-      .bg {
-        /* The image used */
-        background-image: url('<%-process.env.HOST%>/img/capa4.jpg');
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
 
-        /* Full height */
-        height: 100%;
+    .login {
+      padding-top: 100px;
+    }
 
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+    .login .card {
+      background: rgba(0, 0, 0, 0.6);
+    }
 
-      .swal-modal {
-        background-color: rgba(0, 0, 0, 0.6);
-      }
+    .login label {
+      font-size: 16px;
+      color: #ccc;
+    }
 
-      .swal-text {
-        color: #fff;
-      }
+    .login input {
+      font-size: 22px !important;
+      color: #fff;
+    }
 
-      .swal-button {
-        background-color: #4962b3 !important;
-      }
+    /* label color */
+    .input-field label {
+      color: #fff !important;
+    }
 
-      .swal-title {
-        color: #fff !important;
-      }
+    /* label focus color */
+    .input-field input:focus+label {
+      color: #fff !important;
+    }
 
-      .loading {
-        position: absolute;
-        width: 140px;
-        height: 140px;
-        top: calc(50vh - 70px);
-        left: calc(50vw - 70px);
-        z-index: 20;
-      }
-    </style>
+    /* label underline focus color */
+    .input-field input:focus {
+      border-bottom: 1px solid #fff !important;
+      box-shadow: 0 1px 0 0 #fff !important;
+    }
 
-    <div id="loader" style="display:none;">
-      <div
-        style="position:fixed;height:100vh;width:100vw;background:black;opacity:.4;z-index:10;"
-      ></div>
-      <div class="loading">
-        <svg
-          width="140px"
-          height="140px"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="xMidYMid"
-          class="lds-infinity"
-          style="background: none;"
-        >
-          <path
-            fill="none"
-            ng-attr-stroke="{{ config.stroke }}"
-            ng-attr-stroke-width="{{ config.width }}"
-            ng-attr-stroke-dasharray="{{ config.dasharray }}"
-            d="M24.3,30C11.4,30,5,43.3,5,50s6.4,20,19.3,20c19.3,0,32.1-40,51.4-40 C88.6,30,95,43.3,95,50s-6.4,20-19.3,20C56.4,70,43.6,30,24.3,30z"
-            stroke="rgba(100%,100%,100%,0.587)"
-            stroke-width="5"
-            stroke-dasharray="192.4416961669922 64.14723205566406"
-          >
-            <animate
-              attributeName="stroke-dashoffset"
-              calcMode="linear"
-              values="0;256.58892822265625"
-              keyTimes="0;1"
-              dur="1"
-              begin="0s"
-              repeatCount="indefinite"
-            ></animate>
-          </path>
-        </svg>
-      </div>
+    /* icon prefix focus color */
+    .input-field .prefix.active {
+      color: #fff !important;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url('<%-process.env.HOST%>/img/capa4.jpg');
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .swal-modal {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .swal-text {
+      color: #fff;
+    }
+
+    .swal-button {
+      background-color: #4962b3 !important;
+    }
+
+    .swal-title {
+      color: #fff !important;
+    }
+
+    .loading {
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      top: calc(50vh - 70px);
+      left: calc(50vw - 70px);
+      z-index: 20;
+    }
+  </style>
+
+  <div id="loader" style="display:none;">
+    <div style="position:fixed;height:100vh;width:100vw;background:black;opacity:.4;z-index:10;"></div>
+    <div class="loading">
+      <svg width="140px" height="140px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid" class="lds-infinity" style="background: none;">
+        <path fill="none" ng-attr-stroke="{{ config.stroke }}" ng-attr-stroke-width="{{ config.width }}"
+          ng-attr-stroke-dasharray="{{ config.dasharray }}"
+          d="M24.3,30C11.4,30,5,43.3,5,50s6.4,20,19.3,20c19.3,0,32.1-40,51.4-40 C88.6,30,95,43.3,95,50s-6.4,20-19.3,20C56.4,70,43.6,30,24.3,30z"
+          stroke="rgba(100%,100%,100%,0.587)" stroke-width="5" stroke-dasharray="192.4416961669922 64.14723205566406">
+          <animate attributeName="stroke-dashoffset" calcMode="linear" values="0;256.58892822265625" keyTimes="0;1"
+            dur="1" begin="0s" repeatCount="indefinite"></animate>
+        </path>
+      </svg>
     </div>
+  </div>
 
-    <div class="bg">
-      <div class="row login">
-        <div class="col s12 m4 offset-m4">
-          <div class="card">
-            <div class="card-action red darken-4 white-text center-align">
-              <h5>Login</h5>
+  <div class="bg">
+    <div class="row login">
+      <div class="col s12 m4 offset-m4">
+        <div class="card">
+          <div class="card-action red darken-4 white-text center-align">
+            <h5>Login</h5>
+          </div>
+
+          <div class="card-content">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="useremail" type="email" />
+                <label for="useremail">Email</label>
+              </div>
             </div>
 
-            <div class="card-content">
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="useremail" type="email" />
-                  <label for="useremail">Email</label>
-                </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="userpassword" type="password" />
+                <label for="userpassword">Senha</label>
               </div>
+            </div>
 
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="userpassword" type="password" />
-                  <label for="userpassword">Senha</label>
-                </div>
-              </div>
-
-              <div class="row center-align">
-                <button id="btnlogin" class="col s12 m6 offset-m3 waves-effect waves-light btn-large red darken-4">
-                  Entrar
-                </button>
-              </div>
+            <div class="row center-align">
+              <button id="btnlogin" class="col s12 m6 offset-m3 waves-effect waves-light btn-large red darken-4">
+                Entrar
+              </button>
+              <a class="col s12 white-text modal-trigger" style="margin-top: 20px" href="#modal1">Cadastre-se</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--  Scripts-->
-    <script>
-      var env = {}
-      env.HOST = "<%- process.env.HOST %>";
-    </script>
-    <script src="<%-process.env.HOST%>/js/libs/jquery-3.3.1.min.js"></script>
-    <script src="<%-process.env.HOST%>/js/libs/materialize.min.js"></script>
-    <script src="<%-process.env.HOST%>/js/libs/sweetalert.min.js"></script>
-    <script src="<%-process.env.HOST%>/js/login.client.js"></script>
-  </body>
+  <!-- REGISTER MODAL -->
+  <div id="modal1" class="modal">
+    <div class="modal-content grey darken-4">
+      <div class="container">
+        <form class="col s12 m12" method="POST" action="/register/submit">
+          <div class="row">
+            <div class="input-field col s12 m12">
+              <h4 class="white-text">Cadastro</h4>
+            </div>
+            <div class="input-field col s12 m12">
+              <input autocomplete="off" id="username" type="text" class="white-text">
+              <label for="username">Nome Completo</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m6">
+
+              <input autocomplete="off" id="useremailregister" type="email" class="validate white-text">
+              <label for="useremailregister">E-mail</label>
+            </div>
+            <div class="input-field col s12 m6">
+
+              <input autocomplete="off" id="userconfirmemail" type="email" class="validate white-text">
+              <label for="userconfirmemail">Confirme o e-mail</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m6">
+
+              <input autocomplete="off" id="userpasswordregister" type="password" minlength=8 maxlength=20 class="validate white-text">
+              <label for="userpasswordregister">Senha (8 caracteres)</label>
+            </div>
+            <div class="input-field col s12 m6">
+
+              <input autocomplete="off" id="userconfirmpassword" type="password" minlength=8 maxlength=20 class="validate white-text">
+              <label for="userconfirmpassword">Confirme a senha</label>
+            </div>
+            <div class="col s12 m12">
+              <label>
+                <input id="admin" type="checkbox" class="filled-in" checked />
+                <span>Administrador</span>
+              </label>
+              <a id="btnregister" class="col s12 m3 red darken-4 waves-effect waves-light btn right hoverable">cadastrar</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script>
+    var env = {}
+    env.HOST = "<%- process.env.HOST %>";
+  </script>
+  <script src="<%-process.env.HOST%>/js/libs/jquery-3.3.1.min.js"></script>
+  <script src="<%-process.env.HOST%>/js/libs/materialize.min.js"></script>
+  <script src="<%-process.env.HOST%>/js/libs/sweetalert.min.js"></script>
+  <script src="<%-process.env.HOST%>/js/login.client.js"></script>
+</body>
+
 </html>
