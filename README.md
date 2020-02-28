@@ -98,7 +98,9 @@ IBM divides a chatbot into **assistants** and **skills**, where assistants are t
 
 4. Select the **pizzaria** skill.
 
-4. Click **Integrate Web Chat**.
+4. Click **Integrate Web Chat** 
+
+- If you're using the *lite* plan, click *Try Plus Plan*, that's just for the automated WEB Integration, you can do it mannually through HTTP requests, check the [Watson Assistant API docs](https://cloud.ibm.com/apidocs/assistant/assistant-v2).
 
 5. Create an integration.
 
