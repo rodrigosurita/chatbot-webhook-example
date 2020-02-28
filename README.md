@@ -124,6 +124,14 @@ IBM divides a chatbot into **assistants** and **skills**, where assistants are t
 
     `<project_root>/web-site-chatbot-example/index.html`
 
+# Testing
+
+1. Order a pizza in the WebChat or inside the IBM Console on the *Try It* option.
+
+2. Create an account on the Node app.
+
+3. Login after you made an order, the order should be listed on the main screen of the node app.
+
 [demo_url]: https://assistant-simple.ng.bluemix.net/
 [doc_intents]: https://cloud.ibm.com/docs/services/conversation/intents-entities.html#planning-your-entities
 [docs]: https://cloud.ibm.com/docs/services/assistant/index.html#index
