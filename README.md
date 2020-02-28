@@ -1,7 +1,7 @@
 <h1 align="center" style="border-bottom: none;">:robot: Chatbot integrated with an Web-based system sample</h1>
 <h3 align="center">This Node.js app, Watson Assistant Chatbot (IBM) and this Web Chat sample demonstrates the integration of a chatbot with an web-based system.</h3>
 
-![Demo](readme_images/demo.png)
+![Demo](https://github.com/rodrigosurita/chatbot-webhook-example/blob/master/readme_images/demo.PNG?raw=true)
 
 ---------------------------------------------------------------
 
