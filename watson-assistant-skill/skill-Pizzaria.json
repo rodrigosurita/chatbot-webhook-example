@@ -1,262 +1,76 @@
 {
   "intents": [
     {
-      "intent": "products",
-      "examples": [
-        {
-          "text": "O que vocês vendem?"
-        },
-        {
-          "text": "Quero ver o cardápio."
-        },
-        {
-          "text": "Tem o cardápio?"
-        },
-        {
-          "text": "Me mostre a lista de produtos"
-        },
-        {
-          "text": "O que você tem pra vender?"
-        },
-        {
-          "text": "O que posso comprar?"
-        },
-        {
-          "text": "O que posso pedir?"
-        },
-        {
-          "text": "O que tem pra vender?"
-        },
-        {
-          "text": "Quero ver melhor os produtos."
-        },
-        {
-          "text": "Quais são os produtos?"
-        }
-      ],
-      "description": "Inform restaurant products"
-    },
-    {
-      "intent": "order_product",
-      "examples": [
-        {
-          "text": "Quero pedir"
-        },
-        {
-          "text": "Faça um pedido para mim."
-        },
-        {
-          "text": "Quero fazer um pedido."
-        },
-        {
-          "text": "Gostaria de fazer um pedido."
-        },
-        {
-          "text": "Preciso de um refrigerante"
-        },
-        {
-          "text": "Quero pedir uma pizza."
-        },
-        {
-          "text": "Você pode fazer um pedido para mim?"
-        },
-        {
-          "text": "pedir uma pizza"
-        },
-        {
-          "text": "pode anotar um pedido?"
-        },
-        {
-          "text": "Preciso fazer um pedido"
-        }
-      ],
-      "description": "Order a product from the restaurant."
-    },
-    {
-      "intent": "general_restaurant_adress",
-      "examples": [
-        {
-          "text": "Qual é o seu endereço?"
-        },
-        {
-          "text": "tem endereço"
-        },
-        {
-          "text": "Quero saber o endereço"
-        },
-        {
-          "text": "Qual endereço"
-        },
-        {
-          "text": "qual é a sua localização?"
-        },
-        {
-          "text": "preciso do endereço"
-        },
-        {
-          "text": "Me diga seu endereço"
-        },
-        {
-          "text": "Onde fica a pizzaria?"
-        },
-        {
-          "text": "Qual é o endereço da pizzaria?"
-        },
-        {
-          "text": "Onde você mora?"
-        }
-      ],
-      "description": "Inform restaurant address."
-    },
-    {
       "intent": "flavors",
       "examples": [
         {
-          "text": "Quais são os sabores?"
+          "text": "Sabores de pizza"
         },
         {
           "text": "Que tipo de pizza vocês tem?"
         },
         {
-          "text": "Sabores de pizza"
+          "text": "Quais são os sabores?"
         },
         {
-          "text": "Sabores de cauzone"
-        },
-        {
-          "text": "Quais são os refrigerantes?"
-        },
-        {
-          "text": "Que refrigerantes vocês tem?"
-        },
-        {
-          "text": "Me mostre os sabores."
-        },
-        {
-          "text": "Sabores"
+          "text": "Tem qual sabor?"
         },
         {
           "text": "Quero ver os sabores"
         },
         {
-          "text": "Tem qual sabor?"
+          "text": "Sabores"
+        },
+        {
+          "text": "Me mostre os sabores."
+        },
+        {
+          "text": "Que refrigerantes vocês tem?"
+        },
+        {
+          "text": "Quais são os refrigerantes?"
+        },
+        {
+          "text": "Sabores de cauzone"
         }
       ],
       "description": "Inform flavors of a product"
     },
     {
-      "intent": "general_approve_response",
+      "intent": "order_product",
       "examples": [
         {
-          "text": "Ignore o que eu falei."
+          "text": "Preciso fazer um pedido"
         },
         {
-          "text": "Genial!"
+          "text": "pode anotar um pedido?"
         },
         {
-          "text": "Eu gostei disso."
+          "text": "pedir uma pizza"
         },
         {
-          "text": "Está muito bom."
+          "text": "Você pode fazer um pedido para mim?"
         },
         {
-          "text": "Essa é a resposta pela qual procurava."
+          "text": "Quero pedir uma pizza."
         },
         {
-          "text": "Ótimo."
+          "text": "Preciso de um refrigerante"
         },
         {
-          "text": "Essa é a resposta certa."
+          "text": "Gostaria de fazer um pedido."
         },
         {
-          "text": "Essa é a resposta apropriada."
+          "text": "Quero fazer um pedido."
         },
         {
-          "text": "É exatamente disso que preciso."
+          "text": "Faça um pedido para mim."
         },
         {
-          "text": "É disso que preciso."
-        },
-        {
-          "text": "Com certeza. Estou empolgado com isso."
-        },
-        {
-          "text": "Sim, é isso!"
-        },
-        {
-          "text": "Você leu minha mente."
-        },
-        {
-          "text": "Você me entende."
-        },
-        {
-          "text": "Com certeza!"
-        },
-        {
-          "text": "Bom trabalho."
-        },
-        {
-          "text": "Afirmativo! É por isso que eu estava procurando."
-        },
-        {
-          "text": "Nós precisamos exatamente disso."
-        },
-        {
-          "text": "Muito bem. Vamos fazê-lo."
-        },
-        {
-          "text": "Isso está certo."
+          "text": "Quero pedir"
         }
       ],
-      "description": "Approve robot response"
-    },
-    {
-      "intent": "general_cancel_response",
-      "examples": [
-        {
-          "text": "Cancele o pedido."
-        },
-        {
-          "text": "Quero cancelar"
-        },
-        {
-          "text": "Vou precisar cancelar"
-        },
-        {
-          "text": "Pode cancelar"
-        },
-        {
-          "text": "Não vou querer mais."
-        },
-        {
-          "text": "Quero que você cancele o pedido."
-        },
-        {
-          "text": "Pode cancelar o pediro."
-        },
-        {
-          "text": "Vamos cancelar esse pedido."
-        },
-        {
-          "text": "Cancelar pedido"
-        },
-        {
-          "text": "Cancelamento"
-        },
-        {
-          "text": "Não é isso."
-        },
-        {
-          "text": "Eu não preciso disso."
-        },
-        {
-          "text": "Eu não quis dizer isso."
-        },
-        {
-          "text": "Eu não quero isso."
-        }
-      ],
-      "description": "User want to cancel"
+      "description": "Order a product from the restaurant."
     },
     {
       "intent": "general_reject_response",
@@ -314,25 +128,271 @@
         }
       ],
       "description": "Reject robot response"
+    },
+    {
+      "intent": "products",
+      "examples": [
+        {
+          "text": "Quais são os produtos?"
+        },
+        {
+          "text": "Quero ver melhor os produtos."
+        },
+        {
+          "text": "O que tem pra vender?"
+        },
+        {
+          "text": "O que posso pedir?"
+        },
+        {
+          "text": "O que posso comprar?"
+        },
+        {
+          "text": "O que você tem pra vender?"
+        },
+        {
+          "text": "Me mostre a lista de produtos"
+        },
+        {
+          "text": "Tem o cardápio?"
+        },
+        {
+          "text": "Quero ver o cardápio."
+        },
+        {
+          "text": "O que vocês vendem?"
+        }
+      ],
+      "description": "Inform restaurant products"
+    },
+    {
+      "intent": "general_restaurant_adress",
+      "examples": [
+        {
+          "text": "Qual é o seu endereço?"
+        },
+        {
+          "text": "Onde você mora?"
+        },
+        {
+          "text": "Qual é o endereço da pizzaria?"
+        },
+        {
+          "text": "Onde fica a pizzaria?"
+        },
+        {
+          "text": "Me diga seu endereço"
+        },
+        {
+          "text": "preciso do endereço"
+        },
+        {
+          "text": "qual é a sua localização?"
+        },
+        {
+          "text": "Qual endereço"
+        },
+        {
+          "text": "Quero saber o endereço"
+        },
+        {
+          "text": "tem endereço"
+        }
+      ],
+      "description": "Inform restaurant address."
+    },
+    {
+      "intent": "general_cancel_response",
+      "examples": [
+        {
+          "text": "Cancelamento"
+        },
+        {
+          "text": "Eu não quero isso."
+        },
+        {
+          "text": "Eu não quis dizer isso."
+        },
+        {
+          "text": "Eu não preciso disso."
+        },
+        {
+          "text": "Não é isso."
+        },
+        {
+          "text": "Cancelar pedido"
+        },
+        {
+          "text": "Vamos cancelar esse pedido."
+        },
+        {
+          "text": "Pode cancelar o pediro."
+        },
+        {
+          "text": "Quero que você cancele o pedido."
+        },
+        {
+          "text": "Não vou querer mais."
+        },
+        {
+          "text": "Pode cancelar"
+        },
+        {
+          "text": "Vou precisar cancelar"
+        },
+        {
+          "text": "Quero cancelar"
+        },
+        {
+          "text": "Cancele o pedido."
+        }
+      ],
+      "description": "User want to cancel"
+    },
+    {
+      "intent": "general_approve_response",
+      "examples": [
+        {
+          "text": "É disso que preciso."
+        },
+        {
+          "text": "Com certeza. Estou empolgado com isso."
+        },
+        {
+          "text": "Sim, é isso!"
+        },
+        {
+          "text": "Você me entende."
+        },
+        {
+          "text": "Com certeza!"
+        },
+        {
+          "text": "Bom trabalho."
+        },
+        {
+          "text": "Afirmativo! É por isso que eu estava procurando."
+        },
+        {
+          "text": "Genial!"
+        },
+        {
+          "text": "Ignore o que eu falei."
+        },
+        {
+          "text": "Nós precisamos exatamente disso."
+        },
+        {
+          "text": "Muito bem. Vamos fazê-lo."
+        },
+        {
+          "text": "Isso está certo."
+        },
+        {
+          "text": "Eu gostei disso."
+        },
+        {
+          "text": "Você leu minha mente."
+        },
+        {
+          "text": "Está muito bom."
+        },
+        {
+          "text": "Essa é a resposta pela qual procurava."
+        },
+        {
+          "text": "Ótimo."
+        },
+        {
+          "text": "Essa é a resposta certa."
+        },
+        {
+          "text": "Essa é a resposta apropriada."
+        },
+        {
+          "text": "É exatamente disso que preciso."
+        }
+      ],
+      "description": "Approve robot response"
     }
   ],
   "entities": [
+    {
+      "entity": "pizza_sizes",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Grande",
+          "synonyms": [
+            "G"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Familia",
+          "synonyms": [
+            "F"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Média",
+          "synonyms": [
+            "Médio",
+            "M"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pequena",
+          "synonyms": [
+            "pequeno",
+            "P"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "calzone_flavors",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Frango",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Presunto",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Carne seca",
+          "synonyms": [
+            "Carne",
+            "seca"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
     {
       "entity": "pizza_flavors",
       "values": [
         {
           "type": "synonyms",
-          "value": "Portuguesa",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "Atum",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "Calabresa",
+          "value": "Frango",
           "synonyms": []
         },
         {
@@ -342,7 +402,17 @@
         },
         {
           "type": "synonyms",
-          "value": "Frango",
+          "value": "Calabresa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Atum",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Portuguesa",
           "synonyms": []
         }
       ],
@@ -395,76 +465,6 @@
         }
       ],
       "fuzzy_match": true
-    },
-    {
-      "entity": "pizza_sizes",
-      "values": [
-        {
-          "type": "synonyms",
-          "value": "Grande",
-          "synonyms": [
-            "G"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "Pequena",
-          "synonyms": [
-            "pequeno",
-            "P"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "Média",
-          "synonyms": [
-            "Médio",
-            "M"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "Familia",
-          "synonyms": [
-            "F"
-          ]
-        }
-      ],
-      "fuzzy_match": true
-    },
-    {
-      "entity": "sys-date",
-      "values": [],
-      "fuzzy_match": true
-    },
-    {
-      "entity": "calzone_flavors",
-      "values": [
-        {
-          "type": "synonyms",
-          "value": "Frango",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "Presunto",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "Carne seca",
-          "synonyms": [
-            "Carne",
-            "seca"
-          ]
-        }
-      ],
-      "fuzzy_match": true
-    },
-    {
-      "entity": "sys-time",
-      "values": [],
-      "fuzzy_match": true
     }
   ],
   "metadata": {
@@ -487,6 +487,163 @@
     }
   ],
   "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Qual é o tamanho da pizza? (pequena, média, grande ou  família)"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1581553070986",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1581553070989",
+      "previous_sibling": "handler_5_1581553070989"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1581553070986",
+      "context": {
+        "pizza_sizes": "@pizza_sizes"
+      },
+      "conditions": "@pizza_sizes",
+      "event_name": "input",
+      "dialog_node": "handler_5_1581553070989"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Qual produto você deseja pedir?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1581552613717",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1581552613729",
+      "previous_sibling": "handler_6_1581552613729"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_9_1581552613717",
+      "context": {
+        "restaurant_products": "@restaurant_products"
+      },
+      "conditions": "@restaurant_products",
+      "event_name": "input",
+      "dialog_node": "handler_6_1581552613729"
+    },
+    {
+      "type": "standard",
+      "title": "Get customer's name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem $customer_name! Se desejar efetuar um pedido na pizzaria basta me dizer!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Bem-vindo",
+      "context": {
+        "customer_name": "<? input.text ?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_5_1581863773846"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1581552505565",
+      "variable": "$flavor",
+      "conditions": "$restaurant_products == \"Calzone\"",
+      "dialog_node": "slot_4_1582671541549",
+      "previous_sibling": "slot_8_1581553070986"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1581552505565",
+      "variable": "$flavor",
+      "conditions": "$restaurant_products == \"Pizza\"",
+      "dialog_node": "slot_8_1581552789081",
+      "previous_sibling": "slot_9_1581552613717"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vamos fazer um pedido! O que você deseja pedir?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1581552505565",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1581552613051",
+      "previous_sibling": "response_4_1581862729530"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1581552505565",
+      "variable": "$pizza_sizes",
+      "conditions": "$restaurant_products == \"Pizza\"",
+      "dialog_node": "slot_8_1581553070986",
+      "previous_sibling": "slot_8_1581552789081"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Não foi possível fazer o pedido agora!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1581552505565",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1581862729530",
+      "previous_sibling": "response_3_1581862729108"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1581552505565",
+      "variable": "$restaurant_products",
+      "dialog_node": "slot_9_1581552613717",
+      "previous_sibling": "handler_1_1581552613051"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Pedido Efetuado!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1581552505565",
+      "conditions": "$resultado_pedido",
+      "dialog_node": "response_3_1581862729108"
+    },
     {
       "type": "event_handler",
       "output": {
@@ -528,163 +685,6 @@
       "conditions": "@pizza_flavors",
       "event_name": "input",
       "dialog_node": "handler_6_1581552789083"
-    },
-    {
-      "type": "slot",
-      "output": {},
-      "parent": "node_8_1581552505565",
-      "variable": "$pizza_sizes",
-      "conditions": "$restaurant_products == \"Pizza\"",
-      "dialog_node": "slot_8_1581553070986",
-      "previous_sibling": "slot_8_1581552789081"
-    },
-    {
-      "type": "response_condition",
-      "output": {
-        "text": {
-          "values": [
-            "Não foi possível fazer o pedido agora!"
-          ],
-          "selection_policy": "sequential"
-        }
-      },
-      "parent": "node_8_1581552505565",
-      "conditions": "anything_else",
-      "dialog_node": "response_4_1581862729530",
-      "previous_sibling": "response_3_1581862729108"
-    },
-    {
-      "type": "slot",
-      "output": {},
-      "parent": "node_8_1581552505565",
-      "variable": "$flavor",
-      "conditions": "$restaurant_products == \"Calzone\"",
-      "dialog_node": "slot_4_1582671541549",
-      "previous_sibling": "slot_8_1581553070986"
-    },
-    {
-      "type": "slot",
-      "parent": "node_8_1581552505565",
-      "variable": "$restaurant_products",
-      "dialog_node": "slot_9_1581552613717",
-      "previous_sibling": "handler_1_1581552613051"
-    },
-    {
-      "type": "slot",
-      "output": {},
-      "parent": "node_8_1581552505565",
-      "variable": "$flavor",
-      "conditions": "$restaurant_products == \"Pizza\"",
-      "dialog_node": "slot_8_1581552789081",
-      "previous_sibling": "slot_9_1581552613717"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Vamos fazer um pedido! O que você deseja pedir?"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_8_1581552505565",
-      "event_name": "focus",
-      "dialog_node": "handler_1_1581552613051",
-      "previous_sibling": "response_4_1581862729530"
-    },
-    {
-      "type": "response_condition",
-      "output": {
-        "text": {
-          "values": [
-            "Pedido Efetuado!"
-          ],
-          "selection_policy": "sequential"
-        }
-      },
-      "parent": "node_8_1581552505565",
-      "conditions": "$resultado_pedido",
-      "dialog_node": "response_3_1581862729108"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "Qual é o tamanho da pizza? (pequena, média, grande ou  família)"
-          ],
-          "selection_policy": "sequential"
-        }
-      },
-      "parent": "slot_8_1581553070986",
-      "event_name": "focus",
-      "dialog_node": "handler_10_1581553070989",
-      "previous_sibling": "handler_5_1581553070989"
-    },
-    {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_8_1581553070986",
-      "context": {
-        "pizza_sizes": "@pizza_sizes"
-      },
-      "conditions": "@pizza_sizes",
-      "event_name": "input",
-      "dialog_node": "handler_5_1581553070989"
-    },
-    {
-      "type": "standard",
-      "title": "Get customer's name",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Tudo bem $nome_do_cliente! Se desejar efetuar um pedido na pizzaria basta me dizer!"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "Bem-vindo",
-      "context": {
-        "customer_name": "<? input.text ?>"
-      },
-      "conditions": "true",
-      "dialog_node": "node_5_1581863773846"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "Qual produto você deseja pedir?"
-          ],
-          "selection_policy": "sequential"
-        }
-      },
-      "parent": "slot_9_1581552613717",
-      "event_name": "focus",
-      "dialog_node": "handler_3_1581552613729",
-      "previous_sibling": "handler_6_1581552613729"
-    },
-    {
-      "type": "event_handler",
-      "parent": "slot_9_1581552613717",
-      "context": {
-        "restaurant_products": "@restaurant_products"
-      },
-      "conditions": "@restaurant_products",
-      "event_name": "input",
-      "dialog_node": "handler_6_1581552613729"
     },
     {
       "type": "event_handler",
@@ -735,6 +735,33 @@
     },
     {
       "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_7_1582672784696",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
       "title": "Cancel",
       "output": {
         "generic": [
@@ -754,28 +781,6 @@
       "dialog_node": "node_7_1582672784696",
       "digress_out": "allow_all",
       "previous_sibling": "node_6_1582671402918"
-    },
-    {
-      "type": "standard",
-      "title": "Address",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "O endereço da pizzaria é Av. R. Surita, 1234, São Paulo - SP."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "conditions": "#general_restaurant_adress",
-      "digress_in": "returns",
-      "dialog_node": "node_6_1582671402918",
-      "digress_out": "allow_all",
-      "previous_sibling": "node_8_1581552505565"
     },
     {
       "type": "frame",
@@ -806,19 +811,13 @@
     },
     {
       "type": "standard",
-      "title": "Em outros casos",
+      "title": "Address",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Eu não entendi. Você pode tentar reformular a frase."
-              },
-              {
-                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
-              },
-              {
-                "text": "Eu não entendi o sentido."
+                "text": "O endereço da pizzaria é Av. R. Surita, 1234, São Paulo - SP."
               }
             ],
             "response_type": "text",
@@ -826,10 +825,11 @@
           }
         ]
       },
-      "conditions": "anything_else",
-      "dialog_node": "Em outros casos",
-      "previous_sibling": "node_7_1582672784696",
-      "disambiguation_opt_out": true
+      "conditions": "#general_restaurant_adress",
+      "digress_in": "returns",
+      "dialog_node": "node_6_1582671402918",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_8_1581552505565"
     },
     {
       "type": "standard",
