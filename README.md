@@ -132,6 +132,8 @@ IBM divides a chatbot into **assistants** and **skills**, where assistants are t
 
 3. Login after you made an order, the order should be listed on the main screen of the node app.
 
+![Demo2](https://github.com/rodrigosurita/chatbot-webhook-example/blob/master/readme_images/demo2.PNG?raw=true)
+
 [demo_url]: https://assistant-simple.ng.bluemix.net/
 [doc_intents]: https://cloud.ibm.com/docs/services/conversation/intents-entities.html#planning-your-entities
 [docs]: https://cloud.ibm.com/docs/services/assistant/index.html#index
