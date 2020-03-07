@@ -15,8 +15,6 @@
     - Create a database
     - Create a collection.
 
-3. For this example
-
 ## Configuring the app
 
 1. Install the dependencies
